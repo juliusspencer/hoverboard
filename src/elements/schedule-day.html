@@ -1,155 +1,125 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
 
-<link rel="import" href="../../bower_components/iron-image/iron-image.html">
-<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
-
-<link rel="import" href="../../bower_components/paper-card/paper-card.html">
-
-<link rel="import" href="../behaviors/utils-behavior.html">
-<link rel="import" href="../behaviors/cascaded-behavior.html">
-<link rel="import" href="../behaviors/my-schedule-behavior.html">
 <link rel="import" href="./session-element.html">
-
+<link rel="import" href="./shared-styles.html">
 
 <dom-module id="schedule-day">
-
   <template>
+    <style is="custom-style" include="shared-styles flex flex-alignment"></style>
 
-    <style include="shared-styles">
+    <style>
+
       :host {
         display: block;
-        --paper-card-background-color: var(--secondary-background-color);
-      }
-
-      .timeslot {
-        margin-top: 40px;
-      }
-
-      .timeslot:last-of-type {
-        margin-bottom: 64px;
       }
 
       .start-time {
-        padding-left: 24px;
-        min-width: 110px;
+        padding: 8px 16px;
         color: var(--secondary-text-color);
-      }
-
-      .hours {
-        font-size: 56px;
-        font-weight: 300;
         letter-spacing: -0.04em;
       }
 
+      .hours {
+        font-size: 24px;
+        font-weight: 300;
+      }
+
       .minutes {
-        margin-left: 3px;
         font-size: 16px;
       }
 
-      .session {
-        padding: 0 16px;
+      .start-time + .session .subsession:first-of-type {
+        border-top: 1px solid var(--border-light-color);
       }
 
-      .session[flex] {
-        padding: 0 8px;
+      @media (min-width: 640px) {
+        :host {
+          margin-left: auto;
+          display: block;
+          max-width: calc(100% - 64px);
+        }
+
+        .grid {
+          display: grid;
+          grid-column-gap: 16px;
+          grid-row-gap: 32px;
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .start-time {
+          padding: 0;
+          text-align: right;
+          transform: translateX(calc(-100% - 16px));
+        }
+
+        .hours {
+          font-size: 32px;
+        }
+
+        .subsession:not(:last-of-type) {
+          margin-bottom: 16px;
+        }
       }
 
-
-      .sessions-wrapper[vertical] .session:not(:first-of-type) session-element,
-      session-element:not(:first-of-type) {
-        margin-top: 16px;
-      }
     </style>
 
-    <template is="dom-repeat" items="[[day.timeslots]]" as="timeslot">
-      <div class="timeslot" layout vertical$="{{app.isPhoneSize}}" horizontal$="{{!app.isPhoneSize}}">
+    <div class="grid">
+      <template is="dom-repeat" items="[[day.timeslots]]" as="timeslot" index-as="timeslotIndex">
 
-        <div class="start-time">
+        <div class="start-time" style$="grid-area: [[_getTimePosition(timeslotIndex)]]">
           <span class="hours">[[_splitText(timeslot.startTime, ':', 0)]]</span>
           <span class="minutes">[[_splitText(timeslot.startTime, ':', 1)]]</span>
         </div>
 
-        <div
-          class="sessions-wrapper"
-          layout
-          vertical$="{{app.isPhoneSize}}"
-          horizontal$="{{!app.isPhoneSize}}"
-          flex$="{{!app.isPhoneSize}}"
-        >
-          <template is="dom-repeat" items="[[timeslot.sessions]]" as="session">
-            <div class="session" layout vertical flex$="{{!app.isPhoneSize}}">
-              <template
-                is="dom-repeat"
-                items="[[session]]"
-                as="subSession"
-                filter="{{_filterSession(filters.splices)}}">
+        <template is="dom-repeat" items="[[timeslot.sessions]]" as="session" index-as="sessionIndex">
 
-                <session-element
-                  app="{{app}}"
-                  day-name="[[name]]"
-                  session="{{subSession}}"
-                  layout flex-auto
-                ></session-element>
+          <div
+            class="session"
+            style$="grid-area: [[session.gridArea]]" 
+            layout vertical>
+            <template is="dom-repeat" items="[[session.items]]" as="subSession">
+              <session-element
+                class="subsession"
+                day-name="[[name]]"
+                session="[[subSession]]"
+                user="[[user]]"
+                featured-sessions="[[featuredSessions]]"
+              ></session-element>
+            </template>
+          </div>
 
-              </template>
-            </div>
-          </template>
-        </div>
+        </template>
 
-      </div>
-    </template>
+      </template>
+    </div>
 
   </template>
 
   <script>
-    (function () {
-      'use strict';
 
-      Polymer({
+    class ScheduleDay extends Polymer.Element {
+      static get is() {
+        return 'schedule-day';
+      }
 
-        is: 'schedule-day',
+      static get properties() {
+        return {
+          day: Object,
+          name: String,
+          user: Object,
+          featuredSessions: Object,
+        };
+      }
 
-        behaviors: [
-          HOVERBOARD.CascadedBehavior,
-          HOVERBOARD.UtilsBehavior,
-          HOVERBOARD.MyScheduleBehavior
-        ],
+      _getTimePosition(timeslotIndex) {
+        return `${timeslotIndex + 1} / 1`;
+      }
 
-        properties: {
-          app: {
-            type: Object,
-            notify: true
-          },
+      _splitText(text, divider, index) {
+        return text.split(divider)[index];
+      }
+    }
 
-          day: {
-            type: Object
-          },
-
-          name: {
-            type: String
-          },
-
-          filters: {
-            type: Array,
-            value: []
-          }
-        },
-
-
-        _splitText: function (text, divider, index) {
-          return text.split(divider)[index];
-        },
-
-        _filterSession: function () {
-          var filters = this.filters || [];
-          if (!filters.length) return false;
-          return function (session) {
-            return filters.indexOf(session.mainTag) > -1;
-          };
-        }
-      });
-
-    }());
+    window.customElements.define(ScheduleDay.is, ScheduleDay);
   </script>
-
 </dom-module>

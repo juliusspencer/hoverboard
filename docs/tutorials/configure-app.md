@@ -1,6 +1,6 @@
 # Configure
 
-The most important file of configuration is `data/hoverboard.config.json`
+The most important file of configuration is `data/settings.json`
 which looks like:
 
 ```
@@ -38,18 +38,6 @@ meta data in `index.html`
 
   <title>GDG DevFest Ukraine 2016</title>
   ...
-```
-
-### Google Analytics
-Replace GA tracking code in `index.html`
-```
-trackingId: window.ENV === 'prod' ? 'UA-43643469-8' : 'UA-43643469-9'
-```
-
-It's possible to have analytics for development and production. Select
-your environment on line:
-```
-window.ENV = 'dev';
 ```
 
 ### Pages config
