@@ -20,28 +20,37 @@ Our goal is to allow event organizers to set up professional conference website 
 |---|---|
 | **Fast and optimized** | 91/100 PWA on [Lighthouse](https://www.webpagetest.org/lighthouse.php?test=180111_1P_027a041bc5102982f074014807320a86&run=3) |
 | **Works offline** | shitty WiFi on the venue is not a problem anymore |
-| **Mobile first** | layouts optimized for small screens, on Android Hoverboard can be installed as a native app |
+| **Mobile first** | layouts optimized for small screens, Hoverboard can be installed as a native app on your phone |
 | **Push notifications** | remind about sessions in My schedule, session feedback or target users with a custom message |
 | **SEO optimized** | index all content and get to the top in search results |
 | **Speakers and schedule management** | keep and update all information in the  Firebase |
 | **My schedule** | let attendees save sessions they want to visit |
-| **Session ratings** | collect feedback to understand speaker performance |
 | **Customizable theme** | change colors to match your style |
 | **Blog** | post announcements, updates and useful information |
 
 ## Getting Started
 1. [Fork repository](https://github.com/gdg-x/hoverboard/fork) and clone it locally
-2. Setup Environment
+1. Setup Environment
    * Install [Node.js (v8.9.4 or above)](https://nodejs.org/en/download/)
-   * Instal Firebase CLI: `npm i -g firebase-tools`
-3. Create [Firebase account](https://console.firebase.google.com) and login into [Firebase CLI](https://firebase.google.com/docs/cli/): `firebase login`
-4. Update [Hoverboard config](/config) and [Resources](/data)
-5. Run locally
+   * Install Firebase CLI: `npm i -g firebase-tools` or `yarn global add firebase-tools`
+1. Create [Firebase account](https://console.firebase.google.com) and login into [Firebase CLI](https://firebase.google.com/docs/cli/): `firebase login`
+1. Update [Hoverboard config](/config) and [Resources](/data)
+1. Import initial data to the Firebase Database
+    * Generate `serviceAccount.json` file
+      - Go to https://console.firebase.google.com/project/%YOUR_PROJECT_ID%/settings/serviceaccounts/adminsdk
+      - Ensure that **Node.js** is selected and press **GENERATE NEW PRIVATE KEY** 
+      - Save the file as `serviceAccount.json` and to the root of your hoverboard directory (❗Do NOT commit this file to the public repository)
+    * [Optional] You can edit `docs/default-firebase-data.json)` file using your own data
+    * Run `npm run firestore:init` or `yarn firestore:init`
+1. Run locally
    * `cd` into the base directory
    * `npm install` or `yarn`
    * `npm run serve` or `yarn serve`
-6. Deploy
+1. Build and deploy
    * `npm run deploy` or `yarn deploy`
+   
+*NOTE:* By default command using configurations from `/configs/development.json`.
+To serve locally or deploy the production app use `yarn serve:prod` and `yarn deploy:prod` respectively.
 
 :book: Read the [Full Setup Guide](/docs/).
 
@@ -53,7 +62,7 @@ If you don't want to bother with the dependencies, you can use the docker contai
 
 ## Updating
 Here is a git workflow for updating your fork (or downloaded copy) to the latest version:
-```
+```console
 git remote add upstream https://github.com/gdg-x/hoverboard.git
 git fetch upstream
 git merge upstream/hoverboard-v2
@@ -75,6 +84,7 @@ The [Getting Started guide](#getting-started) is probably a good first point of 
 ## Technology Stack
 
 * Polymer 2
+* Redux
 * Firebase
 * Service Worker
 * CSS Grid
@@ -82,6 +92,14 @@ The [Getting Started guide](#getting-started) is probably a good first point of 
 ## Contributing
 
 Awesome! Contributions of all kinds are greatly appreciated. To help smoothen the process we have a few non-exhaustive guidelines to follow which should get you going in no time.
+
+### Good First Issue
+
+Issues labeled [`good first issue`](https://github.com/gdg-x/hoverboard/labels/good%20first%20issue) are a great way to ease into development on this project. 
+
+### Help Wanted Label
+
+Any other issue labeled [`help wanted`](https://github.com/gdg-x/hoverboard/labels/help%20wanted) is ready for a PR.
 
 ### Using GitHub Issues
 

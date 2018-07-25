@@ -16,26 +16,32 @@
     "locale": "en-GB"
   },
   "hashtag": "DevFest18",
+  "disabledSchedule": false,
   "navigation": [
     {
       "route": "home",
       "permalink": "/",
-      "title": "Home"
+      "label": "Home"
     },
     {
       "route": "speakers",
       "permalink": "/speakers/",
-      "title": "Speakers"
+      "label": "Speakers"
     },
     {
       "route": "schedule",
       "permalink": "/schedule/",
-      "title": "Schedule"
+      "label": "Schedule"
     },
     {
       "route": "team",
       "permalink": "/team/",
-      "title": "Team"
+      "label": "Team"
+    },
+    {
+      "route": "blog",
+      "permalink": "/blog/",
+      "label": "Blog"
     }
   ],
   "heroSettings": {
@@ -195,7 +201,7 @@
   },
   "contentLoaders": {
     "schedule": {
-      "itemsCount": 1
+      "itemsCount": 2
     },
     "blog": {
       "itemsCount": 3
