@@ -10,3 +10,4 @@ functions/lib/
 /appengine/dist/
 .DS_Store
 .history
+serviceAccount.json
