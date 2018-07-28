@@ -1,0 +1,73 @@
+{
+	"0": {
+		"title": "Orgniser",
+		"photoUrl": "https://firebasestorage.googleapis.com/v0/b/auckland-gdg.appspot.com/o/images%2Fpeople%2FAlix.jpg?alt=media&token=944f1a1e-0dee-40d4-aef9-8a80aa39cb2c",
+		"socials": [
+			{
+				"icon": "twitter",
+				"link": "https://twitter.com/evolutionises",
+				"name": "Twitter"
+			}
+		],
+		"name": "Alix Klingenberg",
+		"photo": "/images/people/Alix.jpg"
+	},
+	"1": {
+		"title": "Organiser",
+		"photoUrl": "https://firebasestorage.googleapis.com/v0/b/auckland-gdg.appspot.com/o/images%2Fpeople%2FMatt.jpg?alt=media&token=7387ea7f-59a4-488e-86f8-16ceaf18ce98",
+		"socials": [
+			{
+				"name": "Twitter",
+				"icon": "twitter",
+				"link": "https://twitter.com/kiwiandroiddev"
+			}
+		],
+		"name": "Matt Clarke",
+		"photo": "/images/people/Matt.jpg"
+	},
+	"2": {
+		"title": "Organiser",
+		"photoUrl": "",
+		"socials": [],
+		"name": "Nic Tolentino",
+		"photo": "/images/people/Nic.jpg"
+	},
+	"3": {
+		"title": "Organiser",
+		"photoUrl": "",
+		"socials": [
+			{
+				"icon": "twitter",
+				"link": "https://twitter.com/_liamheneghan",
+				"name": "Twitter"
+			}
+		],
+		"name": "Liam Heneghan",
+		"photo": "/images/people/Liam.jpg"
+	},
+	"4": {
+		"photoUrl": "https://firebasestorage.googleapis.com/v0/b/auckland-gdg.appspot.com/o/images%2Fpeople%2FJulius.png?alt=media&token=8c2fdaee-3c9a-4c2d-be64-2b1a026b2033",
+		"socials": [
+			{
+				"icon": "twitter",
+				"link": "https://twitter.com/juliusspencer",
+				"name": "Twitter"
+			},
+			{
+				"icon": "linkedin",
+				"link": "https://linkedin.com/in/juliusspencer",
+				"name": "LinkedIn"
+			}
+		],
+		"name": "Julius Spencer",
+		"photo": "/images/people/Julius.jpg",
+		"title": "Organiser"
+	},
+	"5": {
+		"title": "Design",
+		"photoUrl": "",
+		"socials": [],
+		"name": "Liv",
+		"photo": "/images/people/Liv.jpg"
+	}
+}

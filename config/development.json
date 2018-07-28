@@ -8,7 +8,7 @@
     "authDomain": "auckland-gdg.firebaseapp.com",
     "databaseURL": "https://auckland-gdg.firebaseio.com",
     "projectId": "auckland-gdg",
-    "storageBucket": "",
+    "storageBucket": "auckland-gdg.appspot.com",
     "messagingSenderId": "233127058148"
   },
   "googleMapApiKey": "AIzaSyDWy6O98n-ueoVaYPWRPve23vjm3JP08gw"
