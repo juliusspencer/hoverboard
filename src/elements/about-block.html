@@ -70,34 +70,37 @@
 
         <div>
           <h1 class="container-title">{$ aboutBlock.title $}</h1>
-          <p>{$ aboutBlock.callToAction.featuredSessions.description $}</p>
+          <p>Location</p>
           <a
-            href="{$ aboutBlock.callToAction.featuredSessions.link $}"
+            href="https://www.google.com/maps/dir/?api=1&destination=-36.8528753,174.7752856"
             ga-on="click"
-            ga-event-category="video"
-            ga-event-action="watch"
-            ga-event-label="about block - {$ aboutBlock.callToAction.featuredSessions.label $}"
+            ga-event-category="map"
+            ga-event-action="find"
+            ga-event-label="about block - location"
             target="_blank"
             rel="noopener noreferrer"
           >
             <paper-button class="animated icon-right">
-              <span class="cta-label">{$ aboutBlock.callToAction.featuredSessions.label $}</span>
+              <span class="cta-label">Auckland Conference Centre</span>
               <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
             </paper-button>
           </a>
 
-          <p>{$ aboutBlock.callToAction.howItWas.description $}</p>
-          <paper-button
-            class="animated icon-right"
-            on-tap="_playVideo"
+          <p>Date</p>
+          <a
+            href="https://www.google.com/calendar/render?action=TEMPLATE&text=DevFest+Auckland+2018&dates=20191108T073000Z/20191110T040000Z&details=For+more+details+visit:+https://akldevfest.gdg.nz/&location=12+Nicholls+Ln,+Parnell,+Auckland+1010&sf=true&output=xml"
             ga-on="click"
-            ga-event-category="video"
-            ga-event-action="watch"
-            ga-event-label="about block - {$ aboutBlock.callToAction.howItWas.label $}"
+            ga-event-category="map"
+            ga-event-action="find"
+            ga-event-label="about block - location"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <span>{$  aboutBlock.callToAction.howItWas.label $}</span>
-            <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
-          </paper-button>
+		  <paper-button class="animated icon-right">
+				<span class="cta-label">9th November 2018</span>
+				<iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
+			  </paper-button>
+			</a>
         </div>
 
         <div class="statistics-block">

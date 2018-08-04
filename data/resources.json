@@ -1,12 +1,12 @@
 {
-  "title": "GDG DevFest Season 2018",
+  "title": "DevFest Auckland 2018",
   "description": "Join us to learn and get to know one another!",
   "image": "images/social-share.jpg",
-  "keywords": "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev",
+  "keywords": "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev, auckland",
   "dates": "Friday November 9th, 2018",
   "partnershipProposition": "https://bit.ly/dfua17-partners",
   "share": "Share",
-  "followOur": "Follow our",
+  "followOur": "",
   "followUs": "Follow us",
   "emailUs": "Email us",
   "partnershipResources": "Partnership Resources",
@@ -56,12 +56,12 @@
       "links": [
         {
           "name": "Code of conduct",
-          "url": "https://akldevfest.gdg.nz/assets/GDG_DevFest_2016_partnership_proposition.pdf",
+          "url": "https://akldevfest.gdg.nz/cod/",
           "newTab": true
         },
         {
           "name": "Getting there",
-          "url": "",
+          "url": "https://www.google.com/maps/dir/?api=1&destination=-36.8528753,174.7752856",
           "newTab": true
         },
         {
@@ -72,10 +72,10 @@
       ]
     }
   ],
-  "subscribeNote": "No spam, only the latest news and updates!",
+  "subscribeNote": "",
   "codeOfConduct": "Code of Conduct",
   "aboutBlock": {
-    "title": "What you need to know, before you ask.",
+    "title": "The Basics",
     "statisticsBlock": {
       "attendees": {
         "label": "Attendees",
@@ -154,7 +154,7 @@
     "toast": "Successfully subscribed!"
   },
   "team": {
-    "description": "Our goal is to bring the Auckland community of Android developers along with other Google technologies."
+    "description": "Our team of volunteers is here to help and have given up much of their free time. We appreciate them and hope you do too. ️❤️😀"
   },
   "schedule": {
     "saveSessionsSignedOut": "Sign in to save sessions"
@@ -187,7 +187,7 @@
     "blocks": [
       {
         "title": "Organizer",
-        "description": "<a href='https://www.meetup.com/GDGAuckland/' target='_blank'>GDG Auckland</a> is the proud organizer of DevFest Auckland",
+        "description": "<a href='https://www.meetup.com/GDGAuckland/' target='_blank'>GDG Auckland</a> is the happy organiser of Auckland DevFest 2018.",
         "callToAction": {
           "label": "Open team page",
           "link": "/team"
@@ -195,7 +195,7 @@
       },
       {
         "title": "What is GDG?",
-        "description": "Google Developers Group (GDG) - is open and volunteer geek community who create exciting projects and share experience about Google technologies with a passion",
+        "description": "Google Developer Groups (GDGs) are community groups for developers who are interested in Google’s developer technology; everything from the Android, Flutter, Machine Learning, and Google Chrome platforms, to Maps, YouTube and other APIs.",
         "callToAction": {
           "label": "Read more",
           "link": "https://developers.google.com/groups/",

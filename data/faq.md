@@ -22,7 +22,7 @@ If you’re unable to attend DevFest in-person, you can still be part of the mag
 
 ### Drawing Dates
 
-The window to buy a ticket will be opened until 6PM GMT+2 on October 11th 2018, or earlier if the tickets are sold out. If the ticket was bought after September 30th registered participants won’t get printed badge (their names will be written on the badge by marker). To buy a ticket [follow the link]( https://2event.com/events/1027108), select required ticket type, fill in the required information and pay for it.
+The window to buy a ticket will be opened until 6PM GMT+2 on October 11th 2018, or earlier if the tickets are sold out. If the ticket was bought after September 30th registered participants won’t get printed badge (their names will be written on the badge by marker). To buy a ticket [follow the link]( https://devfest-auckland-2018.lilregie.com/), select required ticket type, fill in the required information and pay for it.
 
 Once you've successfully payed for the ticket you’ll reach a confirmation screen and receive an email with the ticket. Please don’t forget to download it on your device or print it, as it’s required for entrance.
 

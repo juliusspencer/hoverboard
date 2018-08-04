@@ -29,18 +29,13 @@
 			"label": "Speakers"
 		},
 		{
-			"route": "schedule",
-			"permalink": "/schedule/",
-			"label": "Schedule"
-		},
-		{
 			"route": "team",
 			"permalink": "/team/",
 			"label": "Team"
 		},
 		{
 			"route": "blog",
-			"permalink": "/code/",
+			"permalink": "/cod/",
 			"label": "Code of conduct"
 		}
 	],
@@ -56,7 +51,7 @@
 		"speakers": {
 			"title": "Speakers",
 			"metaDescription": "Hear from the Googlers, Partners, and Guest Speakers who are building the future of cloud. Check back often as we add more speakers, including our customers and partners.",
-			"description": "Hear from the Googlers, Partners, and Guest Speakers who are building the future of cloud. Check back often as we add more speakers, including our customers and partners.",
+			"description": "Hear from the guest speakers who are exploring the future of development. Check back often, as we will be adding more speakers and partners.",
 			"background": {
 				"color": "#FFF"
 			},
@@ -105,20 +100,20 @@
 	},
 	"location": {
 		"label": "Location",
-		"name": "Venue TBD",
+		"name": "Auckland Conference Centre",
 		"city": "Auckland",
 		"short": "Auckland, NZ",
-		"address": "TBD, Auckland, NZ",
+		"address": "12 Nicholls Lane, Ground Floor Parnell, Auckland, 1010. Auckland, NZ",
 		"pointer": {
-			"latitude": -36.8505887,
-			"longitude": 174.7810016,
-			"zoom": 10
+			"latitude": -36.8528753,
+			"longitude": 174.7752856,
+			"zoom": 16
 		},
 		"mapCenter": {
-			"latitude": -36.8505887,
-			"longitude": 174.7810016
+			"latitude": -36.8528753,
+			"longitude": 174.7752856
 		},
-		"description": "Description of the event space"
+		"description": "Auckland Conference Centre"
 	},
 	"mediaQueries": {
 		"xs": {
@@ -145,20 +140,6 @@
 			{
 				"name": "instagram",
 				"url": "https://www.instagram.com/gdgauckland"
-			}
-		],
-		"share": [
-			{
-				"name": "gplus",
-				"url": "https://plus.google.com/share?url="
-			},
-			{
-				"name": "facebook",
-				"url": "https://www.facebook.com/sharer.php?u="
-			},
-			{
-				"name": "twitter",
-				"url": "https://twitter.com/intent/tweet?text="
 			}
 		]
 	},

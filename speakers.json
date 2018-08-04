@@ -1,0 +1,68 @@
+{
+  "constantine_mars": {
+    "companyLogoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/logos/gdg-lviv.svg",
+    "socials": [
+      {
+        "name": "Google+",
+        "icon": "gplus",
+        "link": "https://plus.google.com/+ConstantineMars"
+      }
+    ],
+    "country": "Dnipro, Ukraine",
+    "bio": "Constantine is Senior Android Developer at DataArt and GDG Dnipro Organizer. He was speaker on DevFest, multiple IT NonStop events and GDG meetups. Constantine is interested mainly in Android Wear platform, RxJava, best practices in applications Architecture, and sometimes cross-platform mobile development with Xamarin.",
+    "badges": [
+      {
+        "name": "gdg",
+        "description": "Google Developers Group Dnipro",
+        "link": "https://developers.google.com/groups/chapter/116033068768596939209/"
+      }
+    ],
+    "shortBio": "Constantine is Senior Android Developer at DataArt and GDG Dnipro Organizer. He was speaker on De...",
+    "photoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/constantine_mars.jpg",
+    "name": "Constantine Mars",
+    "companyLogo": "/images/logos/gdg-lviv.svg",
+    "title": "Senior Android Developer",
+    "photo": "/images/people/constantine_mars.jpg",
+    "order": 4,
+    "featured": false,
+    "company": "DataArt"
+  },
+  "ihor_dvoretskyi": {
+    "companyLogoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/logos/gdg-lviv.svg",
+    "socials": [
+      {
+        "icon": "gplus",
+        "link": "https://plus.google.com/103000293055760527954",
+        "name": "Google+"
+      },
+      {
+        "name": "LinkedIn",
+        "icon": "linkedin",
+        "link": "https://ua.linkedin.com/in/idvoretskyi"
+      },
+      {
+        "icon": "twitter",
+        "link": "https://twitter.com/idvoretskyi",
+        "name": "Twitter"
+      }
+    ],
+    "country": "Lviv, Ukraine",
+    "bio": "Ihor is an Operations Engineer at Mirantis with a huge experience working in IT companies, where he was responsible for projects tightly bound to Cloud computing and Linux systems. He is deeply interested in the OpenStack cloud platform, other Cloud technologies, especially the Open Source projects.<br><br>Also, Ihor acts as the OpenStack Foundation member, Kubernetes upstream contributor, and OpenStack special interest group lead in Kubernetes Community, working intensely on the questions and abilities, related to the OpenStack and Kubernetes collaboration and integration.",
+    "badges": [
+      {
+        "link": "https://developers.google.com/groups/chapter/102444623953913144164/",
+        "name": "gdg",
+        "description": "Google Developers Group Lviv"
+      }
+    ],
+    "shortBio": "OpenStack Foundation member, Kubernetes upstream contributor and OpenStack special interest group lead in Kubernetes Community.",
+    "photoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/ihor_dvoretskyi.jpg",
+    "name": "Ihor Dvoretskyi",
+    "companyLogo": "/images/logos/gdg-lviv.svg",
+    "title": "Deployment Engineer",
+    "photo": "/images/people/ihor_dvoretskyi.jpg",
+    "order": 9,
+    "featured": false,
+    "company": "Mirantis"
+  }
+}
