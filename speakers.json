@@ -1,68 +1,61 @@
 {
-  "constantine_mars": {
-    "companyLogoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/logos/gdg-lviv.svg",
+  "ankur_kotwal": {
+    "companyLogoUrl": "https://firebasestorage.googleapis.com/v0/b/auckland-gdg.appspot.com/o/images%2Flogos%2Fgoogle.svg?alt=media&token=dad7569d-c0f0-45d2-8a84-4e23e51c172b",
     "socials": [
       {
         "name": "Google+",
         "icon": "gplus",
-        "link": "https://plus.google.com/+ConstantineMars"
-      }
-    ],
-    "country": "Dnipro, Ukraine",
-    "bio": "Constantine is Senior Android Developer at DataArt and GDG Dnipro Organizer. He was speaker on DevFest, multiple IT NonStop events and GDG meetups. Constantine is interested mainly in Android Wear platform, RxJava, best practices in applications Architecture, and sometimes cross-platform mobile development with Xamarin.",
-    "badges": [
+        "link": "https://plus.google.com/+AnkurKotwal"
+      },
       {
-        "name": "gdg",
-        "description": "Google Developers Group Dnipro",
-        "link": "https://developers.google.com/groups/chapter/116033068768596939209/"
+        "icon": "twitter",
+        "link": "https://twitter.com/ankurkotwal",
+        "name": "Twitter"
       }
     ],
-    "shortBio": "Constantine is Senior Android Developer at DataArt and GDG Dnipro Organizer. He was speaker on De...",
-    "photoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/constantine_mars.jpg",
-    "name": "Constantine Mars",
-    "companyLogo": "/images/logos/gdg-lviv.svg",
-    "title": "Senior Android Developer",
-    "photo": "/images/people/constantine_mars.jpg",
-    "order": 4,
-    "featured": false,
-    "company": "DataArt"
+    "country": "Sydney, Australia",
+    "bio": "Ankur is a developer advocate on the Google Cloud developer relations team, where he champions the developer experience on the Google Cloud Platform. Previously, Ankur lead the Google Maps developer relations team where he helped launch the Google Maps APIs gaming offering. Ankur has also been the product manager and software engineer for Google Santa Tracker on Android, an annual tradition focusing on bringing holiday joy through fun and games.",
+    "badges": [],
+    "shortBio": "Ankur is a developer advocate on the Google Cloud developer relations team…",
+    "photoUrl": "https://firebasestorage.googleapis.com/v0/b/auckland-gdg.appspot.com/o/images%2Fpeople%2Fankurk.jpg?alt=media&token=7894a6be-e4fc-4152-8360-bb3e24a7909f",
+    "name": "Ankur Kotwal",
+    "companyLogo": "/images/logos/google.svg",
+    "title": "Google Developer Advocate",
+    "photo": "/images/people/ankurk.jpg",
+    "order": 1,
+    "featured": true,
+    "company": "Google"
   },
-  "ihor_dvoretskyi": {
-    "companyLogoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/logos/gdg-lviv.svg",
+  "brett_morgan": {
+    "companyLogoUrl": "https://firebasestorage.googleapis.com/v0/b/auckland-gdg.appspot.com/o/images%2Flogos%2Fgoogle.svg?alt=media&token=dad7569d-c0f0-45d2-8a84-4e23e51c172b",
     "socials": [
       {
         "icon": "gplus",
-        "link": "https://plus.google.com/103000293055760527954",
+        "link": "https://plus.google.com/+BrettMorgan",
         "name": "Google+"
       },
       {
         "name": "LinkedIn",
         "icon": "linkedin",
-        "link": "https://ua.linkedin.com/in/idvoretskyi"
+        "link": "https://www.linkedin.com/in/brettmorgan/"
       },
       {
         "icon": "twitter",
-        "link": "https://twitter.com/idvoretskyi",
+        "link": "https://twitter.com/DomesticMouse",
         "name": "Twitter"
       }
     ],
-    "country": "Lviv, Ukraine",
-    "bio": "Ihor is an Operations Engineer at Mirantis with a huge experience working in IT companies, where he was responsible for projects tightly bound to Cloud computing and Linux systems. He is deeply interested in the OpenStack cloud platform, other Cloud technologies, especially the Open Source projects.<br><br>Also, Ihor acts as the OpenStack Foundation member, Kubernetes upstream contributor, and OpenStack special interest group lead in Kubernetes Community, working intensely on the questions and abilities, related to the OpenStack and Kubernetes collaboration and integration.",
-    "badges": [
-      {
-        "link": "https://developers.google.com/groups/chapter/102444623953913144164/",
-        "name": "gdg",
-        "description": "Google Developers Group Lviv"
-      }
-    ],
-    "shortBio": "OpenStack Foundation member, Kubernetes upstream contributor and OpenStack special interest group lead in Kubernetes Community.",
-    "photoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/ihor_dvoretskyi.jpg",
-    "name": "Ihor Dvoretskyi",
-    "companyLogo": "/images/logos/gdg-lviv.svg",
-    "title": "Deployment Engineer",
-    "photo": "/images/people/ihor_dvoretskyi.jpg",
-    "order": 9,
-    "featured": false,
-    "company": "Mirantis"
+    "country": "Sydney, Australia",
+    "bio": "Brett is a developer relations engineer with Google Sydney, where he works on Google Maps APIs by day, and plays happily with Flutter by night. Brett has done everything from system administration of 25,000 user Solaris machines to designing e-commerce solutions for large Australian industrial suppliers.",
+    "badges": [],
+    "shortBio": "Brett is a developer relations engineer with Google Sydney, where he works on Google Maps APIs by day, and plays happily with Flutter by night.",
+    "photoUrl": "https://firebasestorage.googleapis.com/v0/b/auckland-gdg.appspot.com/o/images%2Fpeople%2Fbrettm.jpg?alt=media&token=0ae65b14-1fc5-49fc-af23-5ba166d73c7d",
+    "name": "Brett Morgan",
+    "companyLogo": "/images/logos/google.svg",
+    "title": "Google Developer Relations Engineer",
+    "photo": "/images/people/brettm.jpg",
+    "order": 2,
+    "featured": true,
+    "company": "Google"
   }
 }
